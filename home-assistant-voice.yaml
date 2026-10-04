@@ -1706,6 +1706,9 @@ voice_kit:
 
 # Sendspin related components are pinned to specific commits for reproducible builds
 external_components:
+  - source: github://esphome/esphome@2026.9.1
+    components: [micro_wake_word]
+    refresh: 0s
   - source:
       type: git
       url: https://github.com/esphome/home-assistant-voice-pe
