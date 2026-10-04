@@ -240,6 +240,8 @@ switch:
   - platform: template
     id: timer_ringing
     optimistic: true
+    - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6/wake_words/hey_oleg.json
+      id: hey_olen
     internal: true
     restore_mode: ALWAYS_OFF
     on_turn_off:
@@ -283,6 +285,8 @@ switch:
     name: "Internal speaker amp"
     entity_category: config
     restore_mode: ALWAYS_OFF
+    - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6/wake_words/hey_oleg.json
+      id: hey_olen
     internal: true
 
 binary_sensor:
@@ -519,6 +523,8 @@ binary_sensor:
   # Hardware mute switch (Side of the device)
   - platform: gpio
     id: hardware_mute_switch
+    - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6/wake_words/hey_oleg.json
+      id: hey_olen
     internal: true
     pin: GPIO3
     on_press:
@@ -601,6 +607,8 @@ light:
   # This light is not exposed. The device controls it
   - platform: partition
     id: voice_assistant_leds
+    - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6/wake_words/hey_oleg.json
+      id: hey_olen
     internal: true
     default_transition_length: 0ms
     segments:
@@ -1727,8 +1735,17 @@ micro_wake_word:
     gain_factor: 4
   stop_after_detection: false
   models:
+    - model: https://github.com/kahrendt/microWakeWord/releases/download/okay_nabu_20241226.3/okay_nabu.json
+      id: okay_nabu
+    - model: hey_jarvis
+      id: hey_jarvis
+    - model: hey_mycroft
+      id: hey_mycroft
+    - model: https://github.com/kahrendt/microWakeWord/releases/download/stop/stop.json
+      id: stop
     - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6/wake_words/hey_oleg.json
       id: hey_olen
+      internal: true
   vad:
   on_wake_word_detected:
     # If the wake word is detected when the device is muted (Possible with the software mute switch): Do nothing
@@ -1918,6 +1935,8 @@ button:
     id: factory_reset_button
     name: "Factory Reset"
     entity_category: diagnostic
+    - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6/wake_words/hey_oleg.json
+      id: hey_olen
     internal: true
   - platform: restart
     id: restart_button
