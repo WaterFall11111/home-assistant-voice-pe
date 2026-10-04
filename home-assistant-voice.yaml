@@ -1735,7 +1735,7 @@ micro_wake_word:
       id: hey_mycroft
     - model: https://github.com/kahrendt/microWakeWord/releases/download/stop/stop.json
       id: stop
-    - model: wake_words/hey_oleg.json
+    - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6/wake_words/hey_oleg.json
       id: hey_oleg
       internal: true
   vad:
