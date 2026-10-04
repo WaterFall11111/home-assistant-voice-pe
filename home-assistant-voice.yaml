@@ -240,8 +240,6 @@ switch:
   - platform: template
     id: timer_ringing
     optimistic: true
-    - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6/wake_words/hey_oleg.json
-      id: hey_olen
     internal: true
     restore_mode: ALWAYS_OFF
     on_turn_off:
