@@ -1727,7 +1727,7 @@ micro_wake_word:
     gain_factor: 4
   stop_after_detection: false
   models:
-    - model: https://github.com/kahrendt/microWakeWord/releases/download/okay_nabu_20241226.3/okay_nabu.json
+    - model: https://raw.githubusercontent.com/WaterFall11111/home-assistant-voice-pe/custom-26.6-fixed/wake_words/hey_oleg.json
       id: okay_nabu
     - model: hey_jarvis
       id: hey_jarvis
