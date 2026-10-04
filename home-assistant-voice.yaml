@@ -1681,8 +1681,8 @@ voice_kit:
 external_components:
   - source:
       type: git
-      url: https://github.com/esphome/home-assistant-voice-pe
-      ref: dev
+      url: https://github.com/WaterFall11111/home-assistant-voice-pe
+      ref: custom-26.6
     components:
       - voice_kit
     refresh: 0s
