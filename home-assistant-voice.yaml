@@ -1708,6 +1708,8 @@ micro_wake_word:
       id: hey_mycroft
     - model: https://github.com/kahrendt/microWakeWord/releases/download/stop/stop.json
       id: stop
+    - model: wake_words/hey_oleg.json
+      id: hey_oleg
       internal: true
   vad:
   on_wake_word_detected:
